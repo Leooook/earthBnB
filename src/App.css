@@ -190,6 +190,7 @@
 	border: 2px solid #af9a7d;
 	margin-bottom: 2rem;
 	transition: all 0.5s ease;
+	text-decoration: none;
 }
 .BannerBtn:hover {
 	background-color: transparent;

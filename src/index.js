@@ -1,10 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
-<<<<<<< HEAD
-import 'bootstrap/dist/css/bootstrap.min.css'
-=======
->>>>>>> a1f832f... master
 
 import './index.css'
 import * as serviceWorker from './serviceWorker'
