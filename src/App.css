@@ -192,12 +192,6 @@
 	transition: all 0.5s ease;
 }
 .BannerBtn:hover {
-	text-decoration: none;
-=======
-	text-decoration: none;
-}
-.BannerBtn:hover {
->>>>>>> a1f832f... master
 	background-color: transparent;
 	color: #af9a7d;
 }
