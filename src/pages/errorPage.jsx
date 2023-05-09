@@ -1,21 +1,18 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
 
-import Hero from '../components/hero'
+import Hero from '../components/hero';
 
-class ErrorPage extends Component {
-	render() {
-		return (
-			<div>
-				<Hero hero="heroOtherPage" title="Oops!" subtitle="Page Not Found">
-					<Link to="/" className="BannerBtn">
-						{' '}
-						RETURN HOME{' '}
-					</Link>
-				</Hero>
-			</div>
-		)
-	}
-}
+const ErrorPage = () => {
+  return (
+    <>
+      <Hero
+        hero='heroOtherPage'
+        title='Oops!'
+        subtitle='Page Not Found'
+        link='RETURN HOME'
+      ></Hero>
+    </>
+  );
+};
 
-export default ErrorPage
+export default ErrorPage;

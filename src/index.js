@@ -1,22 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { BrowserRouter } from 'react-router-dom'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router } from 'react-router-dom'; // Updated to 'react-router-dom 6'
 
-import './index.css'
-import * as serviceWorker from './serviceWorker'
-import App from './App'
-import { RoomProvider } from './context.jsx'
+import App from './App';
 
-ReactDOM.render(
-	<RoomProvider>
-		<BrowserRouter>
-			<App />
-		</BrowserRouter>
-	</RoomProvider>,
-	document.getElementById('root')
-)
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister()
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <Router>
+    <App />
+  </Router>
+);

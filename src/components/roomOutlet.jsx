@@ -1,20 +1,17 @@
-import React, { Component } from 'react'
+import React, { useContext } from 'react';
 
-import { withConsumer } from '../context'
-import Filter from './filter'
-import ShowRoom from './showRoom'
+import Filter from './filter';
+import ShowRoom from './showRoom';
+import RoomContext from '../store/context';
 
-class RoomOutlet extends Component {
-  render() {
-    let { sortedRooms, load } = this.props.context
+const RoomOutlet = () => {
+  let { sortedRooms, load } = useContext(RoomContext);
+  return (
+    <>
+      <Filter />
+      <ShowRoom sortedRooms={sortedRooms} load={load} />
+    </>
+  );
+};
 
-    return (
-      <div>
-        <Filter />
-        <ShowRoom sortedRooms={sortedRooms} load={load} />
-      </div>
-    )
-  }
-}
-
-export default withConsumer(RoomOutlet)
+export default RoomOutlet;
