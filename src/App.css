@@ -216,6 +216,7 @@
 }
 .serviceEach {
   display: inline-block;
+  padding-bottom: 20px;
   border-radius: 20px;
   background: rgb(241, 241, 241);
   box-shadow: 0.3px 1px 5px 1px #9c958a;
